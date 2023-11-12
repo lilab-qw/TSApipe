@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # User-defined parameters
 SAMPLE_NAME=$1
 COUNT=10
