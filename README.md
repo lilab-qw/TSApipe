@@ -39,9 +39,13 @@ A pipeline for identifying different derived neoantigens using RNA-Seq data and 
 ##### STEP 3: Construction of sample-specific database including different mutation types.
 
 `bash 03.mutation.specific.proteome/indel-fasta.sh sample outdir bam`
+
 `bash 03.mutation.specific.proteome/snp-fasta.sh sample outdir bam`
+
 `bash 03.mutation.specific.proteome/AS-fasta.sh sample AS_type bam outdir`
+
 `bash 03.mutation.specific.proteome/genefusion-fasta.sh sample outdir fq1 fq2`
+
 `bash 03.mutation.specific.proteome/edit-fasta.sh sample outdir bam`
 
     -- sample: name of the sample
@@ -52,6 +56,7 @@ A pipeline for identifying different derived neoantigens using RNA-Seq data and 
 
 ##### STEP 4: Identification of TSA candidates.
 `bash 04.Identification/capaMHC.sh sample MS_filter_file hla outdir`
+
 `bash 04.Identification/annotation.sh sample outdir AS_type LCOUNT`
 
     -- sample: name of the sample
