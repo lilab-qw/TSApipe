@@ -6,6 +6,7 @@ A pipeline for identifying different derived neoantigens using RNA-Seq data and 
 ---
 ##### STEP 1: Data preprocessing and HLA typing acquisition.
 `bash 00.Alignment/run.Alignment.hg38 sample fq1 fq2 outdir `
+
 `bash 01.HLAtyping/run.OptiType-seq2HLA sample fq1 fq2 dir `
 
     -- sample: name of the sample
